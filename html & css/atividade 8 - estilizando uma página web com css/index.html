@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-purple-100 text-gray-800">
+
+    <header class="bg-purple-500 p-4 text-white text-center">
+        <h1 class="text-4xl font-bold">TITULO PRINCIPAL DO MEU WEBSITE</h1>
+    </header>
+
+    <main class="max-w-4xl mx-auto p-8">
+        <section>
+            <h2 class="text-2xl font-semibold text-purple-600">TITULO DA SEÇÃO 1</h2>
+            <p class="mt-2 text-lg">Parágrafos descritivos da seção 1</p>
+            <p class="mt-2">Neste parágrafo posso inserir um hyperlink para um outro site. Visite o site do 
+                <a href="https://www.icmc.usp.br" class="text-purple-700 underline">ICMC</a>
+            </p>
+            <blockquote class="mt-4 text-lg italic text-gray-600 border-l-4 border-purple-500 pl-4">
+                "Uma frase motivacional"
+            </blockquote>
+        </section>
+
+        <section class="mt-8">
+            <h2 class="text-2xl font-semibold text-purple-600">TITULO DA SEÇÃO 2</h2>
+            <p class="mt-2 text-lg">Parágrafos descritivos da seção 2</p>
+            <img src="https://meninas.sbc.org.br/wp-content/uploads/2018/05/37388354_2351999355027071_2087547362204450816_n.jpg" alt="GRACE ICMC USP" class="mt-4 mx-auto border rounded-lg shadow-lg w-1/3">
+        </section>
+
+        <section class="mt-8">
+            <h2 class="text-2xl font-semibold text-purple-600">TITULO DA SEÇÃO 3</h2>
+            <p class="mt-2 text-lg">Lista de itens</p>
+            <ul class="list-disc pl-6 mt-2 space-y-2">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </section>
+
+        <section class="mt-8">
+            <h2 class="text-2xl font-semibold text-purple-600">TITULO DA SEÇÃO 4</h2>
+            <p class="mt-2 text-lg">Tabela</p>
+            <table class="mt-4 table-auto w-full bg-white border-collapse shadow-lg">
+                <thead>
+                    <tr class="bg-purple-500 text-white">
+                        <th class="p-2">Titulo coluna 1</th>
+                        <th class="p-2">Titulo coluna 2</th>
+                        <th class="p-2">Titulo coluna 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-purple-100 border-t">
+                        <td class="p-2">Titulo da linha 1</td>
+                        <td class="p-2">Célula 1</td>
+                        <td class="p-2">Célula 2</td>
+                    </tr>
+                    <tr class="bg-white border-t">
+                        <td class="p-2">Titulo da linha 2</td>
+                        <td class="p-2">Célula 3</td>
+                        <td class="p-2">Célula 4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="mt-8">
+            <h2 class="text-2xl font-semibold text-purple-600">Formulário</h2>
+            <form action="#" class="mt-4 space-y-4">
+                <div>
+                    <label for="nome" class="block text-lg">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome..." class="w-full border rounded p-2">
+                </div>
+                <div>
+                    <label for="sobrenome" class="block text-lg">Sobrenome:</label>
+                    <input type="text" id="sobrenome" name="sobrenome" placeholder="Seu sobrenome..." class="w-full border rounded p-2">
+                </div>
+                <div>
+                    <label for="estado" class="block text-lg">Estado:</label>
+                    <select id="estado" name="estado" class="w-full border rounded p-2">
+                        <option value="MG">MG</option>
+                        <option value="SP">SP</option>
+                        <option value="RJ">RJ</option>
+                    </select>
+                </div>
+                <button type="submit" class="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600">
+                    Enviar
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-purple-500 text-white p-4 text-center mt-8">
+        <p>&copy; 2024 Meu Primeiro Website</p>
+    </footer>
+
+</body>
+</html>
